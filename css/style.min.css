@@ -1,0 +1,1 @@
+body:before{white-space:pre;font-family:monospace;content:"Error: Undefined variable: \"$background-color\".\A         on line 63 of /home/thiago/Software/pricetables/sass/style.scss\A \A 58: 		padding: 15px;\A 59: 	}\A 60: }\A 61: \A 62: .block:hover {\A 63: 	border: 4px $background-color solid;\A 64: }\A 65: \A 66: .price {\A 67: 	text-align: center;\A 68: 	padding: 20px;"}

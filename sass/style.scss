@@ -1,0 +1,132 @@
+@import "config.scss";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: $background;
+	font-family: "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 1.5em;
+}
+
+ul, li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+em {
+	font-style: bold;
+	color: $primary;
+}
+
+
+
+#container {
+	width: 900px;
+	margin: 50px auto;
+	max-width: 900px;
+}
+
+.block {
+	float: left;
+	margin: 0 1%;
+	box-sizing: border-box;
+	background: $block-bg;
+	overflow: hidden;
+	margin-bottom: 10px;
+
+	@if $columns == 4 {
+		width: 23%;
+	} @else if $columns == 3 {
+		width: 30%;
+	} @else {
+		width: 23%;
+	}
+
+	h3 {
+		background: $block-heading;
+		color: $block-bg;
+		text-align: center;
+		font-size: 22px;
+		padding: 15px;
+	}
+}
+
+.block:hover {
+	border: 4px $background solid;
+}
+
+.price {
+	text-align: center;
+	padding: 20px;
+	background: $primary;
+	color: #fff;
+
+	span {
+		font-size: 25px;
+		font-weight: bold;
+	}
+}
+
+.features {
+	li {
+		line-height: 2em;
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	em {
+		font-weight: bold;
+	}
+
+	li:nth-child(odd) {
+		background: #f4f4f4;
+	}
+}
+
+a.button {
+	padding: 7px 10px;
+	border: #ccc solid 1px;
+	text-align: center;
+	display: block;
+	margin: 5px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+a.button-action {
+	background: $secondary;
+	color: #fff;
+}
+
+a.button-action:hover {
+	background: $hover;
+	color: #fff;
+}
+
+/* Highlighted Feature */
+.highlight {
+	height: 500px;
+	margin-top: -30px;
+	/*border: $background solid 5px;*/
+
+	a.button {
+		margin-top: 7px;
+	}
+
+	li {
+		padding: 12px !important;
+	}
+}
+
+@media (max-wid: 768px) {
+	@import "mobile.scss";
+}
