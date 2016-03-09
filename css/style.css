@@ -39,7 +39,7 @@ em {
     padding: 15px; }
 
 .block:hover {
-  border: 4px #242e30 solid; }
+  border: 3px #242e30 solid; }
 
 .price {
   text-align: center;
@@ -81,12 +81,14 @@ a.button-action:hover {
 /* Highlighted Feature */
 .highlight {
   height: 500px;
-  margin-top: -30px;
-  /*border: $background solid 5px;*/ }
+  margin-top: -30px; }
   .highlight a.button {
     margin-top: 7px; }
   .highlight li {
     padding: 12px !important; }
+
+.highlight:hover {
+  border: black 4px solid; }
 
 @media (max-wid: 768px) {
   #container {

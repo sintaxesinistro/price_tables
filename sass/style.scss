@@ -37,7 +37,7 @@ em {
 	float: left;
 	margin: 0 1%;
 	box-sizing: border-box;
-	background: $block-bg;
+	background: $block;
 	overflow: hidden;
 	margin-bottom: 10px;
 
@@ -50,8 +50,8 @@ em {
 	}
 
 	h3 {
-		background: $block-heading;
-		color: $block-bg;
+		background: $blockhead;
+		color: $block;
 		text-align: center;
 		font-size: 22px;
 		padding: 15px;
@@ -59,7 +59,7 @@ em {
 }
 
 .block:hover {
-	border: 4px $background solid;
+	border: 3px $background solid;
 }
 
 .price {
@@ -116,7 +116,6 @@ a.button-action:hover {
 .highlight {
 	height: 500px;
 	margin-top: -30px;
-	/*border: $background solid 5px;*/
 
 	a.button {
 		margin-top: 7px;
@@ -125,6 +124,10 @@ a.button-action:hover {
 	li {
 		padding: 12px !important;
 	}
+}
+
+.highlight:hover {
+	border: black 4px solid;
 }
 
 @media (max-wid: 768px) {
